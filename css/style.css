@@ -1,0 +1,184 @@
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif; }
+
+.header {
+  width: 100%; }
+
+.header__container {
+  padding: 30px 100px 10px; }
+
+.header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px; }
+
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 530px; }
+
+.nav__link {
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 0.01em; }
+  .nav__link:hover {
+    color: #3d9bef; }
+  .nav__link:before {
+    position: absolute;
+    content: "\f107";
+    font-family: FontAwesome;
+    line-height: 16px;
+    right: -13px; }
+
+.tools:before {
+  display: none; }
+
+.panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 340px; }
+
+.search {
+  position: relative;
+  width: 190px; }
+  .search__input {
+    width: 121px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border: 1px solid #B6C0A5;
+    outline: none;
+    background: #fff;
+    color: #9E9C9C; }
+  .search__button {
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    outline: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    margin-right: 25px;
+    background: #243238; }
+    .search__button:before {
+      font-family: FontAwesome;
+      font-size: 16px;
+      line-height: 39px; }
+    .search__button:before {
+      content: "\f002";
+      color: #fff; }
+    .search__button:hover {
+      background: #3d9bef; }
+
+input::-webkit-input-placeholder {
+  color: #B6C0A5; }
+
+input:-moz-placeholder {
+  color: #B6C0A5; }
+
+input:-ms-input-placeholder {
+  color: #B6C0A5; }
+
+.minicart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .minicart:hover .minicart__icon {
+    background: #243238; }
+  .minicart__icon {
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    outline: 0;
+    border: none;
+    background: #3d9bef; }
+    .minicart__icon:before {
+      font-family: FontAwesome;
+      font-size: 16px;
+      line-height: 39px; }
+    .minicart__icon:before {
+      content: '\f07a';
+      font-size: 20px;
+      color: #fff; }
+  .minicart__count {
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    outline: 0;
+    border: none;
+    display: block;
+    background: #f5f5f5;
+    text-align: center;
+    color: #243238;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 39px; }
+    .minicart__count:before {
+      font-family: FontAwesome;
+      font-size: 16px;
+      line-height: 39px; }
+
+.profile__button {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: 0;
+  border: none;
+  background: #f5f5f5; }
+  .profile__button:before {
+    font-family: FontAwesome;
+    font-size: 16px;
+    line-height: 39px; }
+  .profile__button:before {
+    content: '\f007'; }
+  .profile__button:hover {
+    background: #3d9bef; }
