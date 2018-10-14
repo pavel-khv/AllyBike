@@ -6,6 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<title>AllyBike</title>
@@ -29,13 +31,62 @@
 						</div>
 					</div>
 				</div>
+
 				<nav class="header__nav">
-					<a href="" class="nav__link frames">BIKES&FRAMES</a>
-					<a href="" class="nav__link parts">BIKE PARTS</a>
-					<a href="" class="nav__link tools">BIKE TOOLS</a>
-					<a href="" class="nav__link types">PRODUCT TYPES</a>
+					<a href="" class="header__link frames">BIKES&FRAMES</a>
+					<a href="" class="header__link parts">BIKE PARTS</a>
+					<a href="" class="header__link tools">BIKE TOOLS</a>
+					<a href="" class="header__link types">PRODUCT TYPES</a>
 				</nav>
 			</div>
 		</header>
+
+		<main class="main">
+			<div class="slider">
+				<div class="slide slide-1">
+					<img src="img/slider/slide1.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content">
+						<p class="slider__title">MOUNTAIN <br> BIKES</p>
+						<div class="slider__text">
+							<span class="slider_sale">10</span> 
+							<span class="slider_parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+				<div class="slide slide-2">
+					<img src="img/slider/slide2.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content slider__content_pos_right">
+						<p class="slider__title">WOMEN'S <br> BIKES</p>
+						<div class="slider__text">
+							<span class="slider_sale">15</span> 
+							<span class="slider_parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+				<div class="slide slide-3">
+					<img src="img/slider/slide3.jpg" alt="slide-1" class="slider__img">
+					<div class="slider__content slider__content_pos_left">
+						<p class="slider__title">MEN'S <br> CYCLING APPAREL</p>
+						<div class="slider__text">
+							<span class="slider_sale">20</span> 
+							<span class="slider_parcent">% <br> OFF</span>
+						</div>
+						<a href=""><div class="slider__button">LEARN MORE</div></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	<script src="libs/jquery-3.3.1.js"></script>
+	<script src="libs/slick.min.js"></script>
+	<script>
+		$('.slider').slick({
+			dots: true,
+			arrows: false,
+			infinite: false
+		});
+	</script>
 	</body>
 </html>
