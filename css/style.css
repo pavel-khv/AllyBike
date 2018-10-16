@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   list-style: none; }
 
@@ -262,3 +263,113 @@ input:-ms-input-placeholder {
 
 .slider__content_pos_left {
   left: 5%; }
+
+.categories {
+  width: 100%;
+  padding-bottom: 30px; }
+  .categories__container {
+    width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.mountain-bikes {
+  background: url("../img/category_bikes/350/cat-1.jpg"); }
+
+.road-bikes {
+  background: url("../img/category_bikes/350/cat-2.jpg"); }
+
+.urban-bikes {
+  background: url("../img/category_bikes/350/cat-3.jpg"); }
+
+.category {
+  width: 360px;
+  height: 300px;
+  padding: 30px 0;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  overflow: hidden; }
+  .category__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 260px;
+    height: 300px;
+    margin-left: 30px;
+    padding-top: 55%;
+    overflow: hidden;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+  .category__title {
+    font-size: 30px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    margin-bottom: 150px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer; }
+    .category__title:hover {
+      color: #3d9bef; }
+  .category__links {
+    margin-bottom: 30px; }
+  .category__link {
+    position: relative;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .category__link:hover {
+      color: #3d9bef; }
+    .category__link:before {
+      position: absolute;
+      content: '•';
+      left: -23px;
+      top: -4px;
+      color: #3d9bef;
+      font-size: 51px; }
+  .category__button {
+    background: #243238;
+    padding: 17px 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .category__button:hover {
+      background: #3d9bef; }
+  .category:hover .category__container {
+    padding-top: 0; }
+  .category:hover .category__title {
+    margin-bottom: 10px;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
