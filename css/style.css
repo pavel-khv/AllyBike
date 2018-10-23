@@ -594,11 +594,11 @@ input:-ms-input-placeholder {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .banner_sale {
+  .banner__sale {
     font-size: 170px;
     line-height: 160px;
     font-weight: bold; }
-  .banner_parcent {
+  .banner__parcent {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -640,3 +640,63 @@ input:-ms-input-placeholder {
   padding: 5px 10px;
   font-weight: 700;
   font-size: 12px; }
+
+.sales-banner__one,
+.sales-banner__two {
+  position: relative; }
+  .sales-banner__one:hover .sales-banner__img,
+  .sales-banner__two:hover .sales-banner__img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
+.sales-banner__img {
+  position: relative;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .3s filter ease;
+  -o-transition: .3s filter ease;
+  transition: .3s filter ease; }
+
+.sales-banner__wrap {
+  width: 1170px;
+  margin: 70px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.sales-banner__content {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  color: #243238; }
+
+.sales-banner__title {
+  font-size: 28px; }
+
+.sales-banner_sale {
+  font-size: 56px;
+  font-weight: 700; }
+
+.sales-banner__title-second {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.sales-banner__button {
+  display: inline-block;
+  background: #3d9bef;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-filter: none;
+          filter: none; }
+  .sales-banner__button:hover {
+    background: #243238; }
