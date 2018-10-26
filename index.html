@@ -13,6 +13,10 @@
 		<title>AllyBike</title>
 	</head>
 	<body>
+		<div class="preloader" id="preloader">
+		    <span class="load"></span>
+		</div>
+
 		<header class="header">
 			<div class="header__container">
 				<div class="header__inner">
@@ -31,11 +35,54 @@
 						</div>
 					</div>
 				</div>
-				<nav class="header__nav">
-					<a href="" class="header__link frames">BIKES&FRAMES</a>
-					<a href="" class="header__link parts">BIKE PARTS</a>
-					<a href="" class="header__link tools">BIKE TOOLS</a>
-					<a href="" class="header__link types">PRODUCT TYPES</a>
+				<nav>
+					<ul class="header__nav">
+						<li><a href="" class="header__link frames">BIKES&FRAMES</a></li>
+						<li class="parts__wrap">
+							<a href="" class="header__link parts">BIKE PARTS</a>
+							<ul class="types__links parts__links">
+								<li class="mountain">
+									<a class="header__link parts__link mountaina" href="">Mountain bikes</a>
+									<ul class="types__links mountain__links">
+										<li><a class="header__link mountain__link" href="">Cross Country mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Trail mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Downhill mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Electric mountain bikes</a></li>
+										<li><a class="header__link mountain__link" href="">Fat Bikes</a></li>
+									</ul>
+								</li>
+								<li class="road">
+									<a class="header__link parts__link" href="">Road bikes</a>
+									<ul class="types__links road__links">
+										<li><a class="header__link road__link" href="">Road bikes</a></li>
+										<li><a class="header__link road__link" href="">Cyclocross bikes</a></li>
+										<li><a class="header__link road__link" href="">Gravel bikes</a></li>
+										<li><a class="header__link road__link" href="">Triathlon bikes</a></li>
+										<li><a class="header__link road__link" href="">Frames</a></li>
+									</ul>
+								</li>
+								<li class="urban">
+									<a class="header__link parts__link" href="">Urban & commuter bikes</a>
+									<ul class="types__links urban__links">
+										<li><a class="header__link urban__link" href="">Hybrid bikes</a></li>
+										<li><a class="header__link urban__link" href="">Fitness bikes</a></li>
+										<li><a class="header__link urban__link" href="">Gravel bikes</a></li>
+										<li><a class="header__link urban__link" href="">Electric bikes</a></li>
+										<li><a class="header__link urban__link" href="">Cargo</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="" class="header__link tools">BIKE TOOLS</a></li>
+						<li class="types__wrap">
+							<a href="" class="header__link">PRODUCT TYPES</a>
+							<ul class="types__links">
+								<li><a class="header__link types__link" href="">Configurable products</a></li>
+								<li><a class="header__link types__link" href="">Simple products</a></li>
+								<li><a class="header__link types__link" href="">Products with options</a></li>
+							</ul>
+						</li>
+					</ul>
 				</nav>
 			</div>
 		</header>
@@ -578,10 +625,16 @@
 				</div>
 			</div>
 		</footer>
+		
 
 		<script src="libs/jquery-3.3.1.js"></script>
 		<script src="libs/slick.min.js"></script>
 		<script src="js/text.js"></script>
+		<script type="text/javascript">
+			$(window).on('load', function () {
+			    $('#preloader').fadeOut('slow');
+			});
+		</script>
 		<script>
 			$('.slider').slick({
 				dots: true,

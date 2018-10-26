@@ -9,6 +9,60 @@ body {
   width: 100%;
   font-family: "Montserrat", sans-serif; }
 
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 50px;
+  margin-top: -50px;
+  z-index: 9999;
+  opacity: 1;
+  background: white; }
+
+.load {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 5px solid rgba(61, 155, 239, 0.5);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  -webkit-animation: loading 1.2s ease infinite;
+          animation: loading 1.2s ease infinite; }
+  .load:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #3d9bef; }
+
 .header {
   width: 100%; }
 
@@ -40,7 +94,8 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 530px; }
+  width: 530px;
+  margin-left: -20px; }
 
 .header__link {
   position: relative;
@@ -48,6 +103,7 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   font-size: 14px;
+  padding-bottom: 20px;
   letter-spacing: 0.01em;
   color: #243238; }
   .header__link:hover {
@@ -61,6 +117,90 @@ body {
 
 .tools:before {
   display: none; }
+
+.parts__wrap {
+  position: relative; }
+  .parts__wrap:hover .parts__links {
+    display: block; }
+
+.parts__link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 0;
+  margin-bottom: 10px; }
+  .parts__link:before {
+    content: "\f105"; }
+
+.types__wrap {
+  position: relative; }
+  .types__wrap:hover .types__links {
+    display: block; }
+
+.types__links {
+  position: absolute;
+  top: 39px;
+  left: -20px;
+  z-index: 5;
+  background: #fff;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0px -5px 16px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px -5px 16px -8px rgba(0, 0, 0, 0.75);
+  width: 160px;
+  display: none; }
+
+.types__link {
+  display: inline-block;
+  font-size: 12px;
+  padding-bottom: 0;
+  margin-bottom: 10px; }
+  .types__link:before {
+    display: none; }
+
+.mountain {
+  width: 120%; }
+  .mountain__link {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 10px; }
+    .mountain__link:before {
+      display: none; }
+  .mountain__links {
+    top: 30px;
+    left: 221px; }
+  .mountain:hover .mountain__links {
+    display: block; }
+
+.road {
+  width: 120%; }
+  .road__link {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 10px; }
+    .road__link:before {
+      display: none; }
+  .road__links {
+    top: 55px;
+    left: 221px; }
+  .road:hover .road__links {
+    display: block; }
+
+.urban {
+  width: 120%; }
+  .urban__link {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 10px; }
+    .urban__link:before {
+      display: none; }
+  .urban__links {
+    top: 80px;
+    left: 221px; }
+  .urban:hover .urban__links {
+    display: block; }
 
 .panel {
   display: -webkit-box;
