@@ -202,6 +202,54 @@ body {
   .urban:hover .urban__links {
     display: block; }
 
+.frames {
+  position: relative; }
+  .frames:hover .mini-catalog {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+.mini-catalog {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: 750px;
+  z-index: 9999;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px -5px 16px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px -5px 16px -8px rgba(0, 0, 0, 0.75);
+  display: none; }
+  .mini-catalog__category {
+    padding: 0 20px;
+    border-right: 1px solid #e8e8e8; }
+    .mini-catalog__category:last-child {
+      border-right: none; }
+  .mini-catalog__title {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #243238;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    .mini-catalog__title:hover {
+      color: #3d9bef; }
+  .mini-catalog__links {
+    margin-left: -22px; }
+  .mini-catalog__link {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 10px; }
+    .mini-catalog__link:before {
+      display: none; }
+
+.asd {
+  background: #fff; }
+
 .panel {
   display: -webkit-box;
   display: -webkit-flex;
