@@ -1,0 +1,264 @@
+@media screen and (min-width: 1600px) {
+  .header__container {
+    width: 1440px; }
+  .logo {
+    width: 300px; }
+  .header__nav {
+    width: 650px; }
+  .header__link {
+    font-size: 17px; }
+    .header__link:before {
+      line-height: 18px;
+      right: -15px; }
+  .parts__link {
+    font-size: 15px;
+    line-height: 24px; }
+    .parts__link:before {
+      line-height: 25px; }
+  .types__links {
+    width: 200px; }
+  .mountain__link,
+  .urban__link,
+  .road__link {
+    font-size: 15px;
+    line-height: 24px; }
+  .mountain__links,
+  .road__links,
+  .urban__links {
+    left: 261px; }
+  .mini-catalog {
+    width: 850px; }
+    .mini-catalog__link {
+      font-size: 15px;
+      line-height: 24px; }
+    .mini-catalog__title {
+      font-size: 16px; }
+    .mini-catalog__img {
+      width: 170px; }
+  .search {
+    width: 250px; }
+    .search__input {
+      width: 171px;
+      height: 45px;
+      font-size: 16px; }
+    .search__button {
+      width: 49px;
+      height: 49px; }
+      .search__button:before {
+        font-size: 20px; }
+  .minicart__count {
+    width: 49px;
+    height: 49px;
+    font-size: 18px;
+    line-height: 49px; }
+  .profile__button,
+  .minicart__icon {
+    width: 49px;
+    height: 49px; }
+    .profile__button:before,
+    .minicart__icon:before {
+      font-size: 22px; }
+  .slider .slick-dots {
+    bottom: 90px;
+    right: 60px; }
+  .slider .slick-dots li {
+    margin: 0 15px; }
+  .slider .slick-dots li button:before {
+    font-size: 80px; }
+  .slider__content {
+    left: 50%; }
+  .slider__title {
+    font-size: 50px;
+    line-height: 50px; }
+  .slider__sale {
+    font-size: 190px;
+    line-height: 180px; }
+  .slider__parcent {
+    font-size: 80px;
+    line-height: 76px; }
+  .slider__button {
+    font-size: 18px;
+    padding: 20px 30px; }
+  .slider__content_pos_right {
+    left: 58%; }
+  .slider__content_pos_left {
+    left: 10%; }
+  .categories__container {
+    width: 1440px; }
+  .mountain-bikes {
+    background: url("../img/category_bikes/cat-1.jpg"); }
+  .road-bikes {
+    background: url("../img/category_bikes/cat-2.jpg"); }
+  .urban-bikes {
+    background: url("../img/category_bikes/cat-3.jpg"); }
+  .category {
+    width: 450px;
+    height: 380px; }
+    .category__container {
+      width: 360px;
+      height: 380px;
+      margin-left: 50px;
+      padding-top: 45%; }
+    .category__title {
+      font-size: 36px;
+      line-height: 40px; }
+    .category__link {
+      font-size: 16px;
+      line-height: 30px; }
+    .category__button {
+      padding: 20px 40px;
+      font-size: 16px; }
+    .category:hover .category__title {
+      margin-bottom: 20px; }
+  .brands_space_around {
+    width: 1440px; }
+  .brand {
+    width: 200px; }
+  .featured__container {
+    width: 1440px; }
+  .title {
+    font-size: 24px; }
+  .products__img {
+    width: 330px; }
+  .products__link {
+    font-size: 18px; }
+  .products__price {
+    font-size: 22px; }
+  .products__button {
+    width: 49px;
+    height: 49px;
+    margin-left: 10px; }
+  .products__button_like:before {
+    content: '\f004';
+    font-size: 20px; }
+  .products__button_info:before {
+    content: '\f0c9';
+    font-size: 20px; }
+  .products .slick-slide {
+    width: 330px;
+    margin-right: 40px; }
+  .products .slick-prev:before,
+  .products .slick-next:before {
+    font-size: 32px; }
+  .products .slick-prev {
+    right: 62px; }
+  .products .stars {
+    margin: 5px 0 10px; }
+  .products .star_active:before {
+    font-size: 20px; }
+  .products .star_not_active:before {
+    font-size: 20px; }
+  .banner__content {
+    position: absolute;
+    color: #fff;
+    top: 20%;
+    left: 48%;
+    left: auto;
+    right: 15%; }
+  .banner__title {
+    font-size: 50px;
+    line-height: 50px; }
+  .banner__title-second {
+    font-size: 24px; }
+  .banner__sale {
+    font-size: 190px;
+    line-height: 180px; }
+  .banner__parcent {
+    font-size: 80px;
+    line-height: 76px; }
+  .banner__button {
+    font-size: 18px;
+    padding: 20px 30px; }
+  .products__new {
+    padding: 10px 15px;
+    font-size: 14px; }
+  .sales-banner__img {
+    width: 690px; }
+  .sales-banner__wrap {
+    width: 1440px; }
+  .sales-banner__title {
+    font-size: 36px; }
+  .sales-banner_sale {
+    font-size: 66px; }
+  .sales-banner__title-second {
+    font-size: 18px; }
+  .sales-banner__button {
+    padding: 20px 35px;
+    font-size: 16px; }
+  .blog__wrap {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0 20px; }
+  .blog__title {
+    color: #fff;
+    font-size: 24px; }
+  .item:hover .item__wrap {
+    top: 54%; }
+  .item__img {
+    width: 450px; }
+  .item__wrap {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    padding: 25px;
+    color: #fff;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+  .item__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    opacity: 0; }
+  .item__title {
+    font-size: 19px; }
+  .item__author,
+  .item__date,
+  .item__comments {
+    font-size: 18px; }
+  .footer__wrap {
+    width: 1440px; }
+  .footer__links {
+    width: 600px; }
+  .footer__link {
+    font-size: 15px; }
+  .contacts {
+    width: 300px; }
+    .contacts__text {
+      font-size: 15px;
+      line-height: 22px; }
+  .footer__title,
+  .contacts__title {
+    font-size: 18px;
+    line-height: 40px; }
+  .number:before,
+  .shipping:before,
+  .guarantee:before {
+    font-size: 22px; }
+  .feedback {
+    width: 300px; }
+    .feedback__search {
+      width: 220px; }
+    .feedback__input {
+      width: 140px;
+      height: 45px;
+      padding-right: 133px;
+      font-size: 17px; }
+    .feedback__button {
+      height: 50px;
+      right: -69px;
+      padding: 0 15px;
+      font-size: 16px; }
+    .feedback__social {
+      width: 100%; }
+  .soc {
+    width: 50px;
+    height: 50px; } }
