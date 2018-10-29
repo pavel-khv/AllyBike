@@ -247,9 +247,6 @@ body {
     .mini-catalog__link:before {
       display: none; }
 
-.asd {
-  background: #fff; }
-
 .panel {
   display: -webkit-box;
   display: -webkit-flex;
