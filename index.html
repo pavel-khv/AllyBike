@@ -23,13 +23,16 @@
 				<div class="header__inner">
 					<img src="img/logo.png" alt="logo" class="logo">
 					<div class="panel">
+						<span class="drop__menu"></span>
 						<form class="search">
 							<input type="text" placeholder="Search" class="search__input">
 							<button type="submit" class="search__button"></button>
+							<span class="search__close"></span>
 						</form>
-						<div class="minicart">
-							<button class="minicart__icon"></button>
-							<span class="minicart__count">0</span>
+						<span class="button-second"></span>
+						<div class="minicart minicart-mobile">
+							<button class="minicart__icon minicart-mobile__icon"></button>
+							<span class="minicart__count minicart-mobile__count">0</span>
 						</div>
 						<div class="profile">
 							<button class="profile__button"></button>
@@ -38,9 +41,10 @@
 				</div>
 				<nav>
 					<ul class="header__nav">
-						<li class="frames">
-							<a href="" class="header__link">BIKES&FRAMES</a>
-							<div class="mini-catalog">
+						<li class="frames__wrap">
+							<a href="" class="header__link frames">BIKES&FRAMES</a>
+							<span class="drop_button" data-drop="drop_frames"></span>
+							<div class="mini-catalog drop_frames">
 								<div class="mini-catalog__category">
 									<img class="mini-catalog__img" src="img/mini_catalog/fyxation_eastside_crimson_roja_bicicleta_urbana_1.jpg" alt="">
 									<a href=""><span class="mini-catalog__title">ROAD BIKES</span></a>
@@ -93,7 +97,8 @@
 						</li>
 						<li class="parts__wrap">
 							<a href="" class="header__link parts">BIKE PARTS</a>
-							<ul class="types__links parts__links">
+							<span class="drop_button" data-drop="drop_parts"></span>
+							<ul class="types__links parts__links drop_parts">
 								<li class="mountain">
 									<a class="header__link parts__link mountaina" href="">Mountain bikes</a>
 									<ul class="types__links mountain__links">
@@ -126,10 +131,11 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="" class="header__link tools">BIKE TOOLS</a></li>
+						<li class="tools__wrap"><a href="" class="header__link tools">BIKE TOOLS</a></li>
 						<li class="types__wrap">
-							<a href="" class="header__link">PRODUCT TYPES</a>
-							<ul class="types__links">
+							<a href="" class="header__link types">PRODUCT TYPES</a>
+							<span class="drop_button" data-drop="drop_types"></span>
+							<ul class="types__links drop_types">
 								<li><a class="header__link parts__link types__link" href="">Configurable products</a></li>
 								<li><a class="header__link parts__link types__link" href="">Simple products</a></li>
 								<li><a class="header__link parts__link types__link" href="">Products with options</a></li>
@@ -190,7 +196,7 @@
 						</div>
 					</div>
 					<div class="category road-bikes">
-						<div class="category__container">
+						<div class="category__container category__container_position_absolute">
 							<p class="category__title">ROAD <br> BIKES</p>
 							<ul class="category__links">
 								<a href=""><li class="category__link">ROAD BIKES</li></a>
@@ -216,6 +222,10 @@
 				</div>
 			</section>
 			<section class="brands brands_space_around">
+				<!-- <div class="arrows">
+					<span class="arrow arrow__left"></span>
+					<span class="arrow arrow__right"></span>
+				</div> -->
 				<a href=""><img src="img/brands/160/brand-1.png" alt="" class="brand"></a>
 				<a href=""><img src="img/brands/160/brand-2.png" alt="" class="brand"></a>
 				<a href=""><img src="img/brands/160/brand-3.png" alt="" class="brand"></a>
@@ -617,7 +627,8 @@
 				<div class="footer__links">
 					<div class="footer__information point">
 						<h4 class="footer__title">INFORMATION</h4>
-						<ul class="footer__list">
+						<span class="open_links" data-drop="drop__info"></span>
+						<ul class="drop__info footer__list">
 							<a class="footer__link" href="">About Us</a>
 							<a class="footer__link" href="">Customer Service</a>
 							<a class="footer__link" href="">Template Settings</a>
@@ -631,7 +642,8 @@
 					</div>
 					<div class="footer__buy point">
 						<h4 class="footer__title">WHY BUY FROM US</h4>
-						<ul class="footer__list">
+						<span class="open_links" data-drop="drop__buy"></span>
+						<ul class="footer__list drop__buy">
 							<a class="footer__link" href="">Shipping & Delivery</a>
 							<a class="footer__link" href="">Secure payment</a>
 							<a class="footer__link" href="">Support</a>
@@ -641,7 +653,8 @@
 					</div>
 					<div class="footer__account point">
 						<h4 class="footer__title">MY ACCOUNT</h4>
-						<ul class="footer__list">
+						<span class="open_links" data-drop="drop__account"></span>
+						<ul class="footer__list drop__account">
 							<a class="footer__link" href="">Sign In</a>
 							<a class="footer__link" href="">View Cart</a>
 							<a class="footer__link" href="">My Wishlist</a>
@@ -687,24 +700,6 @@
 		<script src="libs/jquery-3.3.1.js"></script>
 		<script src="libs/slick.min.js"></script>
 		<script src="js/text.js"></script>
-		<script type="text/javascript">
-			$(window).on('load', function () {
-			    $('#preloader').fadeOut('slow');
-			});
-		</script>
-		<script>
-			$('.slider').slick({
-				dots: true,
-				arrows: false,
-				infinite: false
-			});
-		</script>
-		<script>
-			$('.products').slick({
-				slidesToShow: 4,
-				infinite: false,
-				variableWidth: true
-			});
-		</script>
+		<script src="js/common.js"></script>
 	</body>
 </html>
