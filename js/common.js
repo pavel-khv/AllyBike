@@ -18,7 +18,7 @@ $(document).on('click', function(event) {
 	$('.header__nav').removeClass('mobile_active');
 });
 
-//droplink
+//drop link
 var dropButton = $('.drop_button');
 dropButton.click(function() {
 	var dataDrop = $(this).attr('data-drop'); //при клике достаем значение data-tab
@@ -40,6 +40,7 @@ $('.slider').slick({
 	infinite: false
 });
 
+//slider products
 function products() {
 	$('.products').slick({
 		slidesToShow: 4,
@@ -50,11 +51,22 @@ function products() {
 			settings: {
 				slidesToShow: 3
 			}
+		}, {
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 2
+			}
+		}, {
+			breakpoint: 479,
+			settings: {
+				slidesToShow: 1
+			}
 		}]
 	});
 };
 
-function slickify() {
+//slider brands
+function brands() {
 	$('.brands').slick({
 		responsive: [{
 			breakpoint: 5000,
@@ -65,10 +77,22 @@ function slickify() {
 				slidesToShow: 5,
 				variableWidth: true
 			}
+		}, {
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 4,
+				variableWidth: true
+			}
+		}, {
+			breakpoint: 479,
+			settings: {
+				slidesToShow: 3,
+				variableWidth: true
+			}
 		}]
 	});
 }
-slickify();
+brands();
 products();
 $(window).resize(function() {
 	var $windowWidth = $(window).width();

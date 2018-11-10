@@ -451,7 +451,8 @@ input:-ms-input-placeholder {
 .slider {
   max-width: 100%; }
   .slider__img {
-    width: 100%; }
+    width: 100%;
+    min-height: 140px; }
   .slider .slick-dots {
     width: auto;
     bottom: 80px;
