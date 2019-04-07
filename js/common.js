@@ -1,44 +1,44 @@
 //прелоадер
 $(function(){
-	$('#preloader').fadeOut('slow'); //когда загружается страница, то прелоадер исчезает
+	$('#preloader').fadeOut('slow'); //hide preloader
 
 	//поиск
 	$('.search__close').on('click', function() {
-		$('.search').removeClass('search-active'); //при нажатии на крестик закрывает инпут поиска
+		$('.search').removeClass('search-active'); //clicking on X close the search input
 	});
 	$('.button-second').on('click', function() {
-		$('.search').addClass('search-active'); //при нажатии на поиск открывается инпут поиска
+		$('.search').addClass('search-active'); //clicking on the search icon open the search input
 	});
 
-	//бургер меню
+	//burger menu
 	$('.drop__menu').click(function() {
-		$('.header__nav').toggleClass('mobile_active'); //открывает и закрывает меню
+		$('.header__nav').toggleClass('mobile_active'); //opening and closing menu
 	});
 	$(document).on('click', function(event) {
 		if ($(event.target).closest(".drop__menu, .header__nav").length) return;
-		$('.header__nav').removeClass('mobile_active'); //если кликнули вне блока меню,то закрывает его
+		$('.header__nav').removeClass('mobile_active'); //if clicked outside the menu block,then closes it
 	});
 
-	//выпадающие ссылки
+	//drop down links
 	$('.drop_button').click(function() {
-		var dataDrop = $(this).attr('data-drop'); //при клике достаем значение data-tab
-		$('.' + dataDrop).slideToggle(0); //октрывает или закрывает категорию меню
+		var dataDrop = $(this).attr('data-drop'); //when you click get the data value
+		$('.' + dataDrop).slideToggle(0); //open or close a menu category
 	});
 
-	//выпадающие ссылки футер
+	//drop down links footer
 	$('.open_links').click(function() {
-		var dataDrop = $(this).attr('data-drop'); //при клике достаем значение data-tab
-		$('.' + dataDrop).toggleClass('footer_active'); //октрывает или закрывает категорию меню
+		var dataDrop = $(this).attr('data-drop'); //when you click get the data value
+		$('.' + dataDrop).toggleClass('footer_active'); //open or close a menu category
 	});
 
-	//главный слайдер
+	//main slider
 	$('.slider').slick({
 		dots: true,
 		arrows: false,
 		infinite: false
 	});
 
-	//слайдер товаров
+	//products slider
 	function products() {
 		$('.products').slick({
 			slidesToShow: 4,
@@ -63,7 +63,7 @@ $(function(){
 		});
 	};
 
-	//слайдер брендов
+	//brand slider
 	function brands() {
 		$('.brands').slick({
 			responsive: [{
@@ -90,12 +90,12 @@ $(function(){
 			}]
 		});
 	}
-	brands(); //вызов слайдера брендов
-	products(); //вызов слайдера товаров
+	brands(); 
+	products(); 
 
 	$(window).resize(function() {
 		var $windowWidth = $(window).width();
-		if ($windowWidth < 1024) { //при ширине окна меньше 1024px обновлять функции слайдеров бренда и товаров
+		if ($windowWidth < 1024) { //when the window width is less than 1024 update the functions of brand sliders and products
 			brands();
 			products();
 		}
